@@ -1,7 +1,7 @@
 # -AI-Professional-Cert-Labs-
 I curated collection of AI implementation projects.
 # 🌿 AI-Driven Product Strategy & Automated Market Intelligence
-**Google AI Essentials Certification | Lab Project**
+**Google AI professional Certification | Lab Project**
 
 ## 📌 Project Overview
 This project demonstrates the use of **Google Gemini** to orchestrate a complete product development workflow—from persona-based brainstorming to automated competitive intelligence. Using a **Green Tech** case study, I developed a strategy for a *Solar-Powered Modular Home Office Hub* by leveraging prompt engineering and autonomous AI actions.
