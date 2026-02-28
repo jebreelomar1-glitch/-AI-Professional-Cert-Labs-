@@ -1,5 +1,7 @@
 # -AI-Professional-Cert-Labs-
 I curated collection of AI implementation projects.
+All AI labs, prompt engineering experiments, and case studies are documented in the Issues Tab. Please navigate there to see the full portfolio of my Google AI Professional Certificate work.
+
 # 🌿 AI-Driven Product Strategy & Automated Market Intelligence
 **Google AI professional Certification | Lab Project**
 
