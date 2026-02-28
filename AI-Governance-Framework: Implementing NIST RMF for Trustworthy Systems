@@ -1,0 +1,53 @@
+# AI Governance & Risk Management Framework
+### *NIST AI RMF Implementation for Trustworthy Systems*
+
+---
+
+## 📊 Framework Overview (Visual)
+This project adheres to the **NIST AI Risk Management Framework (1.0)**, focusing on the four core functions to ensure our AI systems are valid, reliable, and safe.
+
+```mermaid
+graph TD
+    A[GOVERN: Culture of Risk Management] --> B(MAP: Context & Risks)
+    B --> C(MEASURE: Quantitative/Qualitative Analysis)
+    C --> D(MANAGE: Mitigation & Monitoring)
+    D --> B
+    style A fill:#f96,stroke:#333,stroke-width:2px
+
+🛠 Lab Task 1: Identifying Missing Dependencies
+Using Gemini as a Senior GRC Lead, we audited our initial project launch materials against the Map and Govern functions of the NIST RMF.
+Identified Gaps:
+ * Data Lineage Audit: No formal documentation of training data provenance or licensing rights.
+ * Red-Teaming Phase: Missing a dedicated window for adversarial testing (hallucination and prompt injection).
+ * Human-in-the-loop (HITL): Lack of a "fallback" protocol if the model's confidence score drops below a specific threshold.
+⚖️ Lab Task 2: Risk Assessment (NIST "Measure")
+We focused on the Bias & Fairness gap. If left unaddressed, this poses a "Critical" risk to the project's launch.
+| Risk ID | Category | Impact Description | Severity | NIST Mapping |
+|---|---|---|---|---|
+| R-01 | Algorithmic Bias | Model may prioritize certain demographics, leading to inequitable service. | 🔴 High | Measure 2.1 |
+| R-02 | Hallucination | AI generates false technical data, leading to user misinformation. | 🟠 Med | Measure 2.4 |
+| R-03 | Transparency | Lack of "AI Disclosure" UI violates trust standards. | 🟡 Low | Govern 1.2 |
+📅 Lab Task 3: Updated Project Timeline (NIST "Manage")
+The following milestones have been added to the work-back schedule to mitigate identified risks.
+🚀 Revised Launch Milestones
+ * [Week 2] Data Privacy Impact Assessment (DPIA): Legal review of data handling.
+ * [Week 4] Adversarial "Red-Team" Sprint: Testing for model robustness and jailbreaks.
+ * [Week 5] Model Card Publication: Public-facing documentation of model limitations.
+ * [Post-Launch] Continuous Bias Monitoring: Weekly automated checks on production outputs.
+> ⚠️ Critical Flag: The current plan still requires a formal Incident Response Plan for AI-specific failures (e.g., mass hallucination event). This is a priority for the next iteration.
+> 
+📝 How to Use This Document
+This document serves as a living record of our GRC process.
+ * Audit Trail: All changes to the model must be mapped back to these risk categories.
+ * Reporting: Use the "Measure" table for quarterly stakeholder updates.
+Created as part of the "Build with AI" Risk Assessment Lab.
+
+---
+
+### Why this works for your GitHub:
+1.  **Mermaid Diagram:** When you push this to GitHub, that `graph TD` code turns into a professional flowchart automatically. It shows you know how to use "Docs as Code."
+2.  **Professional Table:** It uses the exact terminology found in NIST (Govern, Map, Measure, Manage).
+3.  **Clear Narrative:** It tells a story: "I found a problem, I measured the risk, and I fixed the schedule."
+
+**Would you like me to show you how to link this in your `README.md` so it’s the first thing people see?**
+
